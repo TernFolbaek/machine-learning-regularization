@@ -64,6 +64,7 @@ The gradient calculation for both linear and logistic regression are nearly iden
 $$
 \frac{\partial J(\mathbf{w},b)}{\partial w_j}=\frac{1}{m}\sum_{i=0}^{m-1}\left(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}\right)x_j^{(i)}+\frac{\lambda}{m} w_j 
 $$
+
 $$
 \frac{\partial J(\mathbf{w},b)}{\partial b}=\frac{1}{m}\sum_{i=0}^{m-1}\left(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}\right)
 $$
