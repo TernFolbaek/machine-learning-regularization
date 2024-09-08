@@ -62,10 +62,10 @@ What changes with regularization is computing the gradients.
 The gradient calculation for both linear and logistic regression are nearly identical, differing only in the computation of $f_{\mathbf{w},b}$.
 
 $$
-\frac{\partial J(\mathbf{w},b)}{\partial w_j}=\frac{1}{m}\sum_{i=0}^{m-1}\left(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}\right)x_j^{(i)}+\frac{\lambda}{m} w_j \tag{2}
+\frac{\partial J(\mathbf{w},b)}{\partial w_j}=\frac{1}{m}\sum_{i=0}^{m-1}\left(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}\right)x_j^{(i)}+\frac{\lambda}{m} w_j 
 $$
 $$
-\frac{\partial J(\mathbf{w},b)}{\partial b}=\frac{1}{m}\sum_{i=0}^{m-1}\left(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}\right) \tag{3}
+\frac{\partial J(\mathbf{w},b)}{\partial b}=\frac{1}{m}\sum_{i=0}^{m-1}\left(f_{\mathbf{w},b}(\mathbf{x}^{(i)})-y^{(i)}\right)
 $$
 
 
