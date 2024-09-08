@@ -39,16 +39,21 @@ As was the case in linear regression above, the difference is the regularization
 Including this term encourages gradient descent to minimize the size of the parameters. Note, in this example, the parameter $b$ is not regularized. This is standard practice. 
 
 ## Gradient descent with regularization
+
 The basic algorithm for running gradient descent does not change with regularization, it is:
 
 $$
-\text{repeat until convergence:} \; \lbrace \\
-w_j = w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j} \tag{1} \; \text{for } j := 0..n-1 \\
-b = b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b} \\
-\rbrace
+\text{Repeat until convergence:} \\
+\left\{
+\begin{aligned}
+w_j &= w_j - \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j} \quad \text{for } j = 0, \dots, n-1 \\
+b &= b - \alpha \frac{\partial J(\mathbf{w},b)}{\partial b}
+\end{aligned}
+\right.
 $$
 
 Where each iteration performs simultaneous updates on $w_j$ for all $j$.
+
 
 
 What changes with regularization is computing the gradients.
