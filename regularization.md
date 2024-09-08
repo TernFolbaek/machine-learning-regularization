@@ -44,15 +44,14 @@ The basic algorithm for running gradient descent does not change with regulariza
 
 $$
 \text{Repeat until convergence:} \\
-\left\{
 \begin{aligned}
 w_j &= w_j - \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j} \quad \text{for } j = 0, \dots, n-1 \\
 b &= b - \alpha \frac{\partial J(\mathbf{w},b)}{\partial b}
 \end{aligned}
-\right.
 $$
 
 Where each iteration performs simultaneous updates on $w_j$ for all $j$.
+
 
 
 
