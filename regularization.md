@@ -40,13 +40,16 @@ Including this term encourages gradient descent to minimize the size of the para
 
 ## Gradient descent with regularization
 The basic algorithm for running gradient descent does not change with regularization, it is:
-$$\begin{align*}
-&\text{repeat until convergence:} \; \lbrace \\
-&  \; \; \;w_j = w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j} \tag{1}  \; & \text{for j := 0..n-1} \\ 
-&  \; \; \;  \; \;b = b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b} \\
-&\rbracegit
-\end{align*}$$
+
+$$
+\text{repeat until convergence:} \; \lbrace \\
+w_j = w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j} \tag{1} \; \text{for } j := 0..n-1 \\
+b = b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b} \\
+\rbrace
+$$
+
 Where each iteration performs simultaneous updates on $w_j$ for all $j$.
+
 
 What changes with regularization is computing the gradients.
 
